@@ -524,7 +524,7 @@ main, header, footer { position: relative; z-index: 2; }
   .cell:first-child { border-top: none; }
   .row.head { display: none; }
   .old::before { content: "Traditional · "; color: var(--ink-faint); font-family: var(--mono); font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.08em; display:block; margin-bottom: 6px;}
-  .new::before { content: "Mind of People · "; color: var(--accent); font-family: var(--mono); font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.08em; display:block; margin-bottom: 6px; position: static; width: auto; height: auto; background: none;}
+  .new::before { content: "Predictor · "; color: var(--accent); font-family: var(--mono); font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.08em; display:block; margin-bottom: 6px; position: static; width: auto; height: auto; background: none;}
 }
 
 /* ---------- Ethics ---------- */
