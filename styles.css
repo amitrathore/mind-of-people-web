@@ -382,7 +382,7 @@ main, header, footer { position: relative; z-index: 2; }
   color: var(--ink-faint);
 }
 
-/* ---------- Sim Populi engine ---------- */
+/* ---------- SimPopuli engine ---------- */
 .engine-grid {
   display: grid;
   grid-template-columns: 1.05fr 0.95fr;
