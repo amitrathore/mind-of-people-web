@@ -1,10 +1,13 @@
 # Mind of People
 
-Predict movements. Empower change.
+Drive the outcome. Move the people.
 
-A new kind of planning tool for leaders, campaigners, and community organizers. Instead of just asking what people think today, it simulates how ideas, messages, and actions might ripple through society tomorrow.
+The Outcome Machine for political campaigns. One platform, two modes:
 
-Powered by Sim Populi.
+- **The Driver** — powered by **DatacentrIQ**. Wires into the ad accounts, CRM, donor systems, field tools, and surrogate playbooks you already pay for, owns one metric, and drives ROI on every dollar of campaign spend.
+- **The Predictor** — powered by **Sim Populi**. Agent-based simulation of the electorate. The polling replacement.
+
+First vertical: Politics & Campaigns.
 
 ## Live site
 

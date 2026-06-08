@@ -210,6 +210,84 @@ main, header, footer { position: relative; z-index: 2; }
 .card-divider { height: 1px; background: linear-gradient(90deg, var(--accent), transparent); margin-bottom: 18px; }
 .card p { margin: 0; color: var(--ink-dim); }
 
+/* ---------- Two Modes ---------- */
+.modes-lede { max-width: 880px; margin: 0 0 56px; color: var(--ink-dim); }
+.modes-lede .serif-italic { color: var(--accent); }
+
+.modes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+}
+@media (max-width: 880px) { .modes { grid-template-columns: 1fr; } }
+
+.mode-card {
+  position: relative;
+  padding: 40px 36px 36px;
+  border-radius: 22px;
+  border: 1px solid rgba(244,240,230,0.1);
+  background: linear-gradient(180deg, rgba(244,240,230,0.05), rgba(244,240,230,0.01));
+  backdrop-filter: blur(20px);
+  display: flex; flex-direction: column;
+  transition: transform 0.3s, border-color 0.3s, box-shadow 0.3s;
+  overflow: hidden;
+}
+.mode-card::before {
+  content: ""; position: absolute; top: 0; left: 0; right: 0; height: 2px;
+}
+.mode-driver::before { background: linear-gradient(90deg, var(--accent), var(--accent-2)); }
+.mode-predictor::before { background: linear-gradient(90deg, var(--accent-3), var(--accent)); }
+.mode-card:hover { transform: translateY(-4px); border-color: rgba(245,213,71,0.3); box-shadow: 0 20px 60px rgba(0,0,0,0.4); }
+
+.mode-tag {
+  display: inline-flex; align-items: center; gap: 10px;
+  color: var(--ink-dim); margin-bottom: 22px;
+  font-size: 0.78rem;
+}
+.mode-pip { width: 8px; height: 8px; border-radius: 50%; background: var(--accent); box-shadow: 0 0 10px var(--accent); }
+.mode-pip.pip-pred { background: var(--accent-3); box-shadow: 0 0 10px var(--accent-3); }
+
+.mode-title {
+  font-family: var(--serif); font-weight: 400;
+  font-size: clamp(1.7rem, 2.6vw, 2.3rem);
+  line-height: 1.1; letter-spacing: -0.015em;
+  margin: 0 0 18px; color: var(--ink);
+}
+.mode-card > p {
+  color: var(--ink-dim); margin: 0 0 24px; line-height: 1.6;
+}
+
+.mode-pills {
+  list-style: none; padding: 0; margin: 0 0 28px;
+  display: flex; flex-wrap: wrap; gap: 8px;
+}
+.mode-pills li {
+  padding: 6px 12px;
+  border-radius: 999px;
+  border: 1px solid rgba(244,240,230,0.1);
+  background: rgba(244,240,230,0.03);
+  font-size: 0.72rem; color: var(--ink-dim);
+  letter-spacing: 0.04em;
+}
+.mode-link {
+  margin-top: auto;
+  align-self: flex-start;
+  color: var(--accent);
+  font-size: 0.92rem;
+  padding-bottom: 2px;
+  border-bottom: 1px solid rgba(245,213,71,0.4);
+  transition: border-color 0.2s, color 0.2s;
+}
+.mode-predictor .mode-link { color: var(--accent-3); border-bottom-color: rgba(76,201,240,0.4); }
+.mode-link:hover { border-color: currentColor; }
+
+.modes-foot {
+  margin-top: 44px;
+  color: var(--ink-faint);
+  text-align: center;
+}
+.modes-foot .accent { color: var(--accent); }
+
 /* ---------- The Loop / Outcome Machine ---------- */
 .loop-lede { max-width: 880px; margin: 0 0 60px; color: var(--ink-dim); }
 .loop-lede .serif-italic { color: var(--ink); }
@@ -253,6 +331,33 @@ main, header, footer { position: relative; z-index: 2; }
 @media (max-width: 620px) {
   .loop { grid-template-columns: 1fr; }
   .loop-step { border-right: none; }
+}
+
+/* ---------- Plugs into strip ---------- */
+.plugs-into {
+  margin-top: 48px;
+  padding: 28px 32px;
+  border-radius: 16px;
+  border: 1px dashed rgba(244,240,230,0.15);
+  background: rgba(244,240,230,0.02);
+  display: flex; align-items: center; justify-content: space-between;
+  gap: 24px; flex-wrap: wrap;
+}
+.plugs-label { color: var(--ink-dim); font-size: 0.72rem; }
+.plugs-chips { list-style: none; padding: 0; margin: 0; display: flex; gap: 8px; flex-wrap: wrap; }
+.plugs-chips li {
+  padding: 7px 14px;
+  border-radius: 999px;
+  background: rgba(245,213,71,0.07);
+  border: 1px solid rgba(245,213,71,0.18);
+  color: var(--ink);
+  font-size: 0.72rem;
+  letter-spacing: 0.04em;
+}
+.plugs-chips li:last-child {
+  background: transparent;
+  border-style: dashed;
+  color: var(--ink-faint);
 }
 
 /* ---------- Sim Populi engine ---------- */
