@@ -161,10 +161,15 @@ main, header, footer { position: relative; z-index: 2; }
   display: inline-flex; align-items: center; gap: 8px;
   padding: 14px 26px; border-radius: 999px;
   font-weight: 500; font-size: 0.95rem;
+  font-family: inherit;
   transition: all 0.2s ease;
   border: 1px solid transparent;
   cursor: pointer;
+  background: none;
+  color: inherit;
 }
+button.btn { line-height: 1; }
+button.nav-cta { font-family: inherit; background: none; color: inherit; cursor: pointer; }
 .btn-primary { background: var(--ink); color: #0a0a0c; }
 .btn-primary:hover { background: var(--accent); transform: translateY(-2px); box-shadow: 0 12px 40px rgba(245,213,71,0.3); }
 .btn-ghost { border-color: rgba(244,240,230,0.2); color: var(--ink); }
