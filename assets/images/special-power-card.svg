@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 980" role="img" aria-labelledby="title desc">
+  <title id="title">Mind of People special power card</title>
+  <desc id="desc">A fantasy card style logo mark for Mind of People with a globe and radiating social signal petals.</desc>
+  <defs>
+    <linearGradient id="cardEdge" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#f5d547"/>
+      <stop offset="0.38" stop-color="#ff5e3a"/>
+      <stop offset="0.72" stop-color="#4cc9f0"/>
+      <stop offset="1" stop-color="#f5d547"/>
+    </linearGradient>
+    <radialGradient id="field" cx="50%" cy="38%" r="70%">
+      <stop offset="0" stop-color="#31215f"/>
+      <stop offset="0.5" stop-color="#111114"/>
+      <stop offset="1" stop-color="#08080a"/>
+    </radialGradient>
+    <radialGradient id="glow" cx="50%" cy="45%" r="58%">
+      <stop offset="0" stop-color="#4cc9f0" stop-opacity="0.8"/>
+      <stop offset="0.42" stop-color="#ff5e3a" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#0a0a0c" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="plate" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#fff1a6"/>
+      <stop offset="0.44" stop-color="#f5d547"/>
+      <stop offset="1" stop-color="#8b5f14"/>
+    </linearGradient>
+    <linearGradient id="ink" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#f4f0e6"/>
+      <stop offset="1" stop-color="#9ddff2"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="18" stdDeviation="20" flood-color="#000000" flood-opacity="0.55"/>
+    </filter>
+    <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="7" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <path id="petal" d="M360 208 C393 255 388 306 360 354 C332 306 327 255 360 208 Z"/>
+  </defs>
+
+  <rect x="36" y="36" width="648" height="908" rx="44" fill="#070709" filter="url(#shadow)"/>
+  <rect x="48" y="48" width="624" height="884" rx="36" fill="url(#cardEdge)"/>
+  <rect x="70" y="70" width="580" height="840" rx="27" fill="url(#field)"/>
+  <rect x="92" y="92" width="536" height="796" rx="20" fill="none" stroke="#f4f0e6" stroke-opacity="0.28" stroke-width="3"/>
+  <rect x="108" y="110" width="504" height="86" rx="16" fill="#0a0a0c" stroke="url(#plate)" stroke-width="3"/>
+  <text x="360" y="151" text-anchor="middle" fill="#f4f0e6" font-family="Georgia, 'Times New Roman', serif" font-size="31" letter-spacing="3">MIND OF PEOPLE</text>
+  <text x="360" y="179" text-anchor="middle" fill="#f5d547" font-family="Inter, Arial, sans-serif" font-size="15" letter-spacing="5">SPECIAL POWER</text>
+
+  <circle cx="360" cy="456" r="242" fill="url(#glow)"/>
+  <g opacity="0.96" filter="url(#softGlow)">
+    <use href="#petal" fill="#ff5e3a" transform="rotate(0 360 456)"/>
+    <use href="#petal" fill="#f5d547" transform="rotate(30 360 456)"/>
+    <use href="#petal" fill="#4cc9f0" transform="rotate(60 360 456)"/>
+    <use href="#petal" fill="#d62cff" transform="rotate(90 360 456)"/>
+    <use href="#petal" fill="#ff5e3a" transform="rotate(120 360 456)"/>
+    <use href="#petal" fill="#f5d547" transform="rotate(150 360 456)"/>
+    <use href="#petal" fill="#4cc9f0" transform="rotate(180 360 456)"/>
+    <use href="#petal" fill="#d62cff" transform="rotate(210 360 456)"/>
+    <use href="#petal" fill="#ff5e3a" transform="rotate(240 360 456)"/>
+    <use href="#petal" fill="#f5d547" transform="rotate(270 360 456)"/>
+    <use href="#petal" fill="#4cc9f0" transform="rotate(300 360 456)"/>
+    <use href="#petal" fill="#d62cff" transform="rotate(330 360 456)"/>
+  </g>
+  <g opacity="0.88">
+    <circle cx="196" cy="324" r="16" fill="#d62cff" stroke="#0a0a0c" stroke-width="7"/>
+    <circle cx="524" cy="324" r="16" fill="#4cc9f0" stroke="#0a0a0c" stroke-width="7"/>
+    <circle cx="196" cy="588" r="16" fill="#f5d547" stroke="#0a0a0c" stroke-width="7"/>
+    <circle cx="524" cy="588" r="16" fill="#ff5e3a" stroke="#0a0a0c" stroke-width="7"/>
+    <circle cx="360" cy="252" r="13" fill="#f5d547" stroke="#0a0a0c" stroke-width="6"/>
+    <circle cx="360" cy="660" r="13" fill="#4cc9f0" stroke="#0a0a0c" stroke-width="6"/>
+  </g>
+
+  <g>
+    <circle cx="360" cy="456" r="106" fill="#0a0a0c" stroke="url(#plate)" stroke-width="12"/>
+    <circle cx="360" cy="456" r="78" fill="#31bfe5" stroke="#111114" stroke-width="8"/>
+    <path d="M282 456 H438" stroke="#111114" stroke-width="8" stroke-linecap="round"/>
+    <path d="M302 411 C338 431 382 431 418 411" fill="none" stroke="#111114" stroke-width="7" stroke-linecap="round"/>
+    <path d="M302 501 C338 481 382 481 418 501" fill="none" stroke="#111114" stroke-width="7" stroke-linecap="round"/>
+    <path d="M360 378 C333 421 333 491 360 534 C387 491 387 421 360 378 Z" fill="none" stroke="#111114" stroke-width="8" stroke-linejoin="round"/>
+    <path d="M360 378 V534" stroke="#111114" stroke-width="8" stroke-linecap="round"/>
+  </g>
+
+  <path d="M142 720 H578" stroke="url(#plate)" stroke-width="3" stroke-linecap="round"/>
+  <text x="360" y="766" text-anchor="middle" fill="url(#ink)" font-family="Georgia, 'Times New Roman', serif" font-size="31">Outcome Machine</text>
+  <text x="360" y="806" text-anchor="middle" fill="#a8a39a" font-family="Inter, Arial, sans-serif" font-size="17" letter-spacing="2">DRIVE OUTCOMES. MOVE PEOPLE.</text>
+  <rect x="164" y="832" width="392" height="42" rx="21" fill="#0a0a0c" stroke="#4cc9f0" stroke-opacity="0.55"/>
+  <text x="360" y="859" text-anchor="middle" fill="#f5d547" font-family="Inter, Arial, sans-serif" font-size="16" letter-spacing="4">DATACENTRIQ + SIMPOPULI</text>
+</svg>

@@ -723,17 +723,21 @@ button.nav-cta { font-family: inherit; background: none; color: inherit; cursor:
 /* ---------- CTA band ---------- */
 .cta-band {
   display: grid;
-  grid-template-columns: 0.9fr 1.1fr;
-  gap: 60px;
+  grid-template-columns: minmax(220px, 300px) 1fr;
+  gap: clamp(32px, 6vw, 70px);
   align-items: center;
 }
 @media (max-width: 880px) { .cta-band { grid-template-columns: 1fr; } }
 .cta-image {
   margin: 0;
-  border-radius: 20px; overflow: hidden;
-  border: 1px solid rgba(244,240,230,0.08);
+  width: min(100%, 280px);
+  justify-self: center;
+  filter: drop-shadow(0 24px 50px rgba(0,0,0,0.45));
 }
-.cta-image img { width: 100%; aspect-ratio: 4/5; object-fit: cover; filter: contrast(1.05) saturate(1.1); }
+.cta-image img {
+  width: 100%;
+  height: auto;
+}
 .tags {
   display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 24px;
   font-family: var(--mono); font-size: 0.85rem;
